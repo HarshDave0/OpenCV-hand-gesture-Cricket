@@ -2,7 +2,7 @@ import cv2,math
 import matplotlib.pyplot as plt
 import numpy as np
 
-print('///This is a hand gesture cricket game with similar concept like odd-even, rock-paper-scissor game.')
+print('///This is a hand gesture cricket game with similar concept like odd-even, rock-paper-scissor game.///')
 print('\n')
 blurValue = 35
 bow = 0
