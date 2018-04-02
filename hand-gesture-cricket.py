@@ -25,8 +25,7 @@ while True:
     _, thresh1 = cv2.threshold(blurred, 127, 255,
                                cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
     cv2.imshow('Thresholded', thresh1)
-    im2,contours, hierarchy = cv2.findContours(thresh1.copy(),cv2.RETR_TREE, \
-            cv2.CHAIN_APPROX_NONE)
+    im2,contours, hierarchy = cv2.findContours(thresh1.copy(),cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
     max_area = -1
     for i in range(len(contours)):
         cnt=contours[i]
